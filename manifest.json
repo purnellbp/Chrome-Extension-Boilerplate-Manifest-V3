@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "My Extension",
+    "version": "1.0",
+    "description": "A simple Chrome Extension",
+    "author": "Your Name",
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup/popup.html"
+    },
+    "options_page": "settings.html",
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "thank_you.html",
+                "settings.html"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
+}
